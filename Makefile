@@ -3,6 +3,7 @@ all: main
 main: main.o
 	mkdir build
 	g++ -o OpenChess main.o board.o piece.o pieceTextures.o chessGame.o -lsfml-graphics -lsfml-window -lsfml-system
+	g++ -o OpenChess.exe main.o board.o piece.o pieceTextures.o chessGame.o -lsfml-graphics -lsfml-window -lsfml-system
 	cp *.o build
 	rm -rf *.o main
 
